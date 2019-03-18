@@ -15,9 +15,6 @@ class App extends Component {
       ]
     }
   }
-  random = () => {
-    return Math.random();
-  }
   addNote = (note) => {
     note.added = new Date().toLocaleString()
     let items = [...this.state.items, note]
